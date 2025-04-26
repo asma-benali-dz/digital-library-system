@@ -14,7 +14,6 @@ public abstract class Book implements Borrowable {
         this.ISBN = ISBN;
         this.isBorrowed = false;
     }
-
     // Getters and Setters
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
@@ -28,19 +27,16 @@ public abstract class Book implements Borrowable {
             isBorrowed = true;
         }
     }
-
     @Override
     public void returnItem() {
         if (isBorrowed) {
             isBorrowed = false;
         }
     }
-
     @Override
     public boolean isAvailable() {
         return !isBorrowed;
-    }
-
+    }  
     @Override
     public String toString() {
         return "Book{" +

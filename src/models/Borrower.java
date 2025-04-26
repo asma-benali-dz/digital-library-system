@@ -32,6 +32,10 @@ public class Borrower {
             borrowedBooks.remove(book);
         }
     }
+    @Override
+    public String toString() {
+      return "الاسم: " + name + ", الرقم الجامعي: " + studentId;
+    }
 
     @Override
     public String toString() {
